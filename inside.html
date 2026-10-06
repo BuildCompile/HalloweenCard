@@ -4,18 +4,29 @@
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <link rel="stylesheet" href="style.css">
         <title>Inside of the Card</title>
-        <link rel="icon" type="x-icon" href="pumpkinfavicon.jpg">
+        <link rel="icon" type="x-icon" href=pumpkinfavicon.png>
     </head>
     <body>
         <audio autoplay>
-            <source src="audio-for-website.mp3" type="audio/mpeg">
+            <source src="websiteaudio.mp3" type="audio/mpeg">
         </audio>
         <div class="verticalformatting">
             <div class="cardformatting">
                 <h1>TRICK OR TREAT!</h1>
                 <p>Happy Halloween! We hope that this year's Halloween brings you very memorable memories.<br>Have Fun!</p>
                 <img src="skeleton.gif" width=25%><br>
-                <button class="buttonformatting" id="confettibutton">Start Confetti</button>
+                <button class="buttonforconfetti" id="confettibutton">Start Confetti</button>
+                <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+                <script>
+                    const button = document.getElementById('confettibutton')
+                    button.addEventListener('click', () => {
+            confetti({
+                particleCount: 150,
+                spread: 80,
+                origin: { y: 0.6 }
+            });
+        });       
+                </script>
             </div>
             <div class="cardformatting2">
                 <h1>TOP FIVE HALLOWEEN CANDIES:</h1>
