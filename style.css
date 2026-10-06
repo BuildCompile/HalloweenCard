@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1B1B1B;
+}
+h1{
+    font-family: georgia, serif;
+    font-size: 34px;
+}
+p{
+    font-family: arial, sans-serif;
+    color: #333333;
+}
+.cardformatting{
+    background-color: #FF7528;
+    width:676 px;
+    length:323.529px;
+    padding:60px;
+    border: 5px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+.cardformatting2{
+    background-color: #FF7528;
+    width:676 px;
+    length:323.529px;
+    padding:60px;
+    margin-top: 4px;
+    border: 5px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+.vertical-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.buttonformatting{
+    font-size: 23px;
+    border: solid black;
+    border-radius: 8px;
+    background-color:#ADD8E6;
+    color:black;
+    text-decoration: none;
+}
+    
+.buttonformatting:hover{
+    background-color: #4169E1;
+}
+
+.iconformatting{
+    margin-top:0px;
+}
+.buttonforconfetti{
+    font-size: 23px;
+    border: solid black;
+    border-radius: 8px;
+    background-color:#ADD8E6;
+    color:black;
+    text-decoration: none;
+}
+.buttonforconfetti:hover{
+    background-color: #4169E1;
+}
